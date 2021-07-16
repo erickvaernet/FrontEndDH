@@ -1,0 +1,84 @@
+/*---------------------------------- GENERAL -------------------------------------------*/
+body {
+  font-family: 'Times New Roman';
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: #005677;
+  text-transform: uppercase;
+  font-style: Bold;
+}
+
+h1 {
+  margin: 0;
+  font-size: 35px;
+}
+
+/*--------------------------------Header---------------------------------------------------*/
+
+header .top {
+  text-align: center;
+  background-color: #e5e5e5;
+  margin: 0;
+}
+
+header .top img {
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+header .down {
+  background-color: #c4c4c4;
+  text-align: center;
+
+  letter-spacing: 0.4em;
+}
+
+header .down p {
+  margin: 0;
+}
+
+/*-------------------------------------------------Main-----------------------------------*/
+
+main .container {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  width: 70%;
+}
+
+main h2 {
+  background-color: #c4c4c4;
+  color: #005677;
+  letter-spacing: 0.2em;
+}
+main section .contenido {
+  margin-left: 5%;
+}
+
+main section .contenido span {
+  font-weight: bold;
+}
+main section .contenido span.ital {
+  font-style: italic;
+}
+
+main section ul {
+  line-height: 1.5em;
+}
+
+main section dl .elemento-lista-dic {
+  margin: 0.8%;
+}
+
+/*----------------------------------------Footer---------------------------------------*/
+footer {
+  background-color: #005677;
+  text-align: center;
+  margin-top: 5%;
+  font-weight: 700;
+  color: white;
+  font-size: 1.5em;
+}
