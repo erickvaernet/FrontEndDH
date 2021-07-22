@@ -1,0 +1,131 @@
+/*---------------------------- Fuentes ----------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*---------------------------- General ----------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------------- Header ----------------------------*/
+
+header div.top {
+  position: relative;
+  background-color: #1cd1b0;
+  height: 38px;
+}
+header div.top p {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  size: 15px;
+  line-height: 17, 58px;
+}
+header div.down {
+  position: relative;
+  height: 100px;
+  background-color: #00669f;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+header div.down h1 {
+  position: absolute;
+  height: 18px;
+  left: 28px;
+  top: 28px;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+/*---------------------------- Main ----------------------------*/
+
+.contenedor {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.card {
+  position: relative;
+  background-color: #f3f3f3;
+  position: relative;
+  margin: 20px;
+  height: 95%;
+  width: 18%;
+  display: inline-block;
+  border: 5px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.card .top {
+  width: 100%;
+  height: 193px;
+  background-size: cover;
+}
+
+.card.batman .top {
+  background-image: url('../img/fondo-batman.png');
+  background-size: cover;
+  text-align: center;
+}
+
+.card.harley .top {
+  background-image: url('../img/fondo-harley.png');
+  background-size: cover;
+  text-align: center;
+}
+
+.card .down {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.card .down h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.card input {
+  margin-top: 30px;
+  background-color: #00669f;
+  color: white;
+  width: 40%;
+  height: 48px;
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 64%);
+}
+
+.card .icono img {
+  position: absolute;
+  top: 120px;
+  left: 110px;
+  border-radius: 50%;
+}
+
+/*---------------------------- Footer ----------------------------*/
+
+footer {
+  position: relative;
+  background-color: #00669f;
+  font-size: 16px;
+  height: 51px;
+}
+footer p {
+  position: absolute;
+  left: 16px;
+  top: 15px;
+  color: white;
+}
+
+footer p span.frontend {
+  text-transform: uppercase;
+}
+
+/**/
+/**/
