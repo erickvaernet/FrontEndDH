@@ -44,6 +44,7 @@ header div.down h1 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+
 }
 
 .card{
@@ -51,50 +52,58 @@ header div.down h1 {
   background-color: #f3f3f3;
   right: 0;
   left: 0;
-  line-height: 1.5rem;
+  height: 95%;
+  text-align: center;
+  line-height: 25px;
   width: 90%;
-  border-radius: 1rem;
-  margin: 1rem;
+  margin: 2px;
+  border-width: 2%; 
+  border-radius: 5%;
 }
 
 .card .top { 
-  height: 12rem;
-  background-size: cover;  
-  border-radius: 1rem 1rem 0 0;
+  height: 195px;
+  background-size: cover;
 }
 
 .card.batman .top {
   background-image: url('../img/fondo-batman.png');
+  background-size: cover;
+  text-align: center;
 }
+
 .card.superman .top {
   background-image: url('../img/fondo-superman.png');
+  background-size: cover;
+  text-align: center;
+  border-width: 5px; 
+  border-radius: 10px;
 }
-.card.mujer-maravilla .top {
-  background-image: url('../img/fondo-mujer-maravilla.png');
-}
+
 .card.harley .top {
   background-image: url('../img/fondo-harley.png');
+  background-size: cover;
+  text-align: center;
 }
 
 
 .card .down {
   margin-top: 25%;
-  margin-bottom: 10%;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-bottom: 75px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .card .down h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1.4rem;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .card input {
-  margin-top: 10%;
+  margin-top: 30px;
   background-color: #00669f;
   color: white;
-  height: 2.5rem;
-  width: 33%;
+  height: 48px;
   box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 64%);
 }
 
@@ -126,79 +135,4 @@ footer p span.frontend {
 }
 
 /*-------------------------- Responsive ---------------------------*/
-
-/*Tablets*/
-@media (min-width:550px) {
-  .contenedor {
-    flex-direction: row;
-    align-items: stretch;    
-  }
-  .card{
-    width: 43%;
-    margin: 0.5rem , auto;
-  }
-  .card .down p{
-    text-align: left;
-  }  
-  .card.batman input{
-    margin-top: 5rem;
-  }
-}
-
-@media (min-width:1100px){
-  .contenedor {
-    flex-direction: row;
-    align-items: stretch;    
-  }
-  .card{
-    width: 25%;
-    margin: 0.5rem , auto;
-  }
-  .card .down p{    
-    text-align: left;
-  }  
-
-  .card.batman input,
-  .card.mujer-maravilla input{
-    margin-top: 4.5rem;    
-  }
-
-  .card.batman p,
-  .card.mujer-maravilla p
-  {
-    margin-top: 3rem; 
-  }
-
-}
-
-@media (min-width:1600px){
-  .contenedor {
-    flex-direction: row;
-    align-items: stretch;    
-  }
-  .card{
-    width: 20%;
-    margin: 0.5rem , auto;
-  }
-  .card .down p{    
-    text-align: left;
-  }  
-
-  .card.batman input,
-  .card.mujer-maravilla input{
-    margin-top: 4.5rem;    
-  }
-
-  .card.harley input{
-    margin-top: 3.5rem;    
-  }
-
-  .card.batman p,
-  .card.mujer-maravilla p,
-  .card.harley p
-  {
-    margin-top: 3rem; 
-  }
-
-}
-
+/**/
