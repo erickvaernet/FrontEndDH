@@ -80,7 +80,9 @@ nav ul li a{
 
 /*--------------------------------------- Main ------------------------------------------*/
 
-/*---------- Seccion 1 Banner ----------*/
+/*-------------------- Seccion 1 Banner -------------------*/
+
+/*General*/
 .banner{
     background-image: url("../img/banner-fondo.svg");
     background-repeat: no-repeat;
@@ -92,19 +94,100 @@ nav ul li a{
     justify-content: flex-end;
     align-items: center;
 }
-
-
-.texto-banner .cuadro1{
-
+.texto-banner{
+    margin: auto 2%;
+    text-align: center;
 }
 
-.texto-banner .cuadro1 p {
-    
+/*--- Cuadro 1 ---*/
+.texto-banner .cuadro1 {
     background-color: white;
     height: 5rem;
-    margin: 100 px;
-    border-radius: 5%;
+    border-radius: 0.5rem;
     font-size: 3rem;
+}
+.texto-banner .cuadro1 p{
+    position: relative;
+    top: 10%;
+}
+
+/*--- Cuadro 2 ---*/
+.texto-banner .cuadro2 {
+    margin: 0 auto;
+    height: 4rem;
+    font-size: 1.5rem;
+}
+.texto-banner .cuadro2 p{
+    position: relative;
+    top: 25%;
+}
+
+/*--- Cuadro 3 ---*/
+.texto-banner .cuadro3 {
+    background-color: #F0A83E;
+    width: 50%;
+    margin: 0 auto;
+    height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}
+.texto-banner .cuadro3 p{
+    position: relative;
+    top: 18%;
+}
+
+/*-------------------- Seccion 2 Cards ----------------*/
+
+/*--- General ---*/
+.productos-destacados{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
+/*--- Texto Destacados ---*/
+.contenedor-texto-destacados{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.logo-huella{
+    width: 30%;
+    margin: 0 auto;
+}
+.contenedor-texto-destacados h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/*Menu Destacados*/
+.menu-destacados{
+    display: flex;
+    justify-content:center;
+    gap: 3rem;
+}
+.menu-destacados li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+.menu-destacados a{
+    text-decoration: none;
+    color: #666666;
+}
+
+
+
+
+/*--- Cards Destacados ---*/
+.contenedor-cards-destacados{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
 }
 
 
