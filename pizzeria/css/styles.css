@@ -36,6 +36,7 @@ header{
     align-items: center;   
     position: relative;
     right: 2rem; 
+    max-height: 100%;
 }
 
 /*Titulo del logo*/
@@ -66,51 +67,105 @@ nav ul{
     color: white;
     justify-content: space-around;
     gap:  3rem;
-    font-weight: 400;
     font-size: 1.5rem;
 }
 
-
+ul.menu li{ 
+    font-weight: 400;
+}
 
 /*------------------------------ Main -----------------------------*/
-.padre{
+
+main{
+    height: 70vh;
+}
+
+.contenedor-main{
     display: flex;
     background-color: #E3E3E3;
-    margin: 19px 35px;
-    justify-content: space-between;
-
-    
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    height: 100%;    
 }
 
-.containerPizzas{
-    border-radius: 5px;
-    display: flex;
+/*  ------------------ Items -------------------  */
+.item{
+    width: 45%;
+    height: 90%;    
+    border-radius: 3%;
 }
-.item2 h2{
-    text-align: center;
+h2{
+    color: red;   
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
 }
 
-.item1{
+/*----- Primer Item Delivery -----*/
+.item.delivery{
     background-image: url("../img/delivery.jpg");
     background-position: center;
     background-size: cover;
-    display: inline-block;
-    width: 490px;
-    height: 350px;
-    border: 2px;
-    border-radius: 3%;
+
 }
 
-.item2{
-    background-color: white;
-    display: inline-block;
-    width: 490px;   
-    height: 350px;
-    border: 2px;
-    border-radius: 3%;
+.delivery h2{
+  position: relative;
+  left: 2.5rem;
+  top: 1rem;
 }
+
+.delivery h2 span{
+    color: white;
+}
+
+
+/*---- Segundo Item Podio de Pizzas ----*/
+.item.podio-pizzas{
+    background-color: white;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item.podio-pizzas h2{
+    margin: 2rem auto;
+}
+
+.contenedor-top5-pizza{
+   display: flex;
+   justify-content: space-between;
+   gap:3rem;
+   margin: auto 0;
+   font-size: 1.5rem;
+   line-height: 3rem;
+   width: 70%;
+   padding-bottom: 2rem;
+}
+
+.contenedor-top5-pizza h3{
+    position: relative;
+    bottom: 2rem;
+}
+
+.contenedor-top5-pizza .img-pizza-falling{
+    flex-grow: 0.5;
+}
+.contenedor-top5-pizza img{
+    position: relative;
+    top:3rem;
+    width: 80%;
+}
+
 
 /*----------------------------- Footer -----------------------------*/
+
+footer{
+    height: 18vh;
+}
+
 .containerFooter{
     background-color: #222222;
     display: flex;
