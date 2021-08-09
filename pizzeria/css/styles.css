@@ -67,11 +67,11 @@ nav ul{
     color: white;
     justify-content: space-around;
     gap:  3rem;
-    font-size: 1.5rem;
 }
 
 ul.menu li{ 
-    font-weight: 400;
+    font-weight: 400;    
+    font-size: 1.5rem;
 }
 
 /*------------------------------ Main -----------------------------*/
@@ -149,7 +149,6 @@ h3{
     position: relative;
     bottom: 2rem;
 }
-
 .contenedor-top5-pizza .img-pizza-falling{
     flex-grow: 0.5;
 }
@@ -163,17 +162,27 @@ h3{
 /*----------------------------- Footer -----------------------------*/
 
 footer{
-    height: 18vh;
+    height: 18vh;    
+    background-color: #222222;
+    color:#F3F3F3;
 }
 
-.containerFooter{
-    background-color: #222222;
-    display: flex;
-    color:#F3F3F3;
+.contenedor-footer{
+    display: flex;    
+    justify-content: space-between; 
     align-items: center;
-    justify-content: space-between;
+
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
 }
+
+.contenedor-footer .menu{
+    line-height: 2.5rem;
+}
+
 .pizzaTitulo{
     display: inline-flex;
     margin-right: 50px;
 }
+
