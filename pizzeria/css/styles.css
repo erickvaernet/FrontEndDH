@@ -11,27 +11,35 @@
 }
 ul {
     list-style-type: none; 
-    font-weight: 400;   
-    size:16px; 
+    size:1rem; 
 }
 
 /*----------------------------- Header -----------------------------*/
 header{
     background-color: #222222;
+    height: 12vh;
 }
-.containerHeader {
-    
+
+.containerHeader {    
     display: flex;     
     justify-content: space-between;
     align-items:  center;
     margin: 0 5%;
+    height: 100%;
 }
 
-.containerHeader nav {
-    padding: 20px;
+/*---------- Logo pizza&font -------*/
+
+/* Contenedor del logo*/
+.contenedor-logo{
+    display: flex;
+    align-items: center;   
+    position: relative;
+    right: 2rem; 
 }
 
-/*Logo pizza&font*/
+/*Titulo del logo*/
+
 span.pizza{
     color: green;
 }
@@ -42,14 +50,24 @@ span.front{
     color: red;
 }
 
-/* Menu */
+/*Imagen del Logo*/
+.logo{
+    position: relative;
+    right: 1rem;
+}
 
-ul.menu{
+/*------------ Menu ----------------*/
+nav{
+    min-width: 10%;
+    max-width: 40%;
+}
+nav ul{
     display: flex;
     color: white;
     justify-content: space-around;
-    gap:  2rem;
-
+    gap:  3rem;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 
