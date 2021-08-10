@@ -16,8 +16,8 @@
             <p>Grandes ofertas en comedores</p>
           </div>        
           <div class="idioma-moneda">
-            <p>Español˅</p>
-            <p>ARG$˅</p>
+            <p>Español˅</p> <!-- reemplazar por select -->
+            <p>ARG$˅</p> <!-- reemplazar por select -->
           </div>
         </div>
       </div>
@@ -71,30 +71,71 @@
         </div>
 
         <div class="contenedor-cards-destacados">
-          <div>
+          <div class="card">
             <img src="img/churrasquito.svg" alt="Imagen de juguete churrasquito" />
-            <p>Juguete Churrasquito</p>
-            <p>$150</p>
+            <div class="texto-card">
+              <h3>Juguete Churrasquito</h3>
+              <p class="precio">$150</p>
+            </div>
           </div>
-          <div>
+          <div class="card">
             <img src="img/comedero.svg" alt="Imagen de comedero para perro" />
-            <p>Comedero Para Perro</p>
-            <p>$250</p>
+            <div class="texto-card">
+              <h3>Comedero Para Perro</h3>
+              <p class="precio">$250</p>
+            </div>
           </div>
-          <div>
+          <div class="card">
             <img src="img/huesito.svg" alt="Imagen de juguete huesito" />
-            <p>Juguete Huesito</p>
-            <p>$650</p>
+            <div class="texto-card">
+              <h3>Juguete Huesito</h3>
+              <p class="precio">$650</p>  
+            </div>
           </div>
         </div>        
       </section>
 
       <section class="contacto">
-        <h2>Contáctenos</h2>
+        <h2>Contáctanos</h2>
+        <form action="/contacto" method="GET">
+            <input type="text" name="nombre" placeholder="Nombre y apellido" >
+            <input type="email" name="email" placeholder="Ingresá tu correo electrónico" >
+            <input type="text" name="telefono" placeholder="Teléfono" >
+            <div class="botones-contacto">              
+              <button class="boton resetear" type="reset">Resetear</button>              
+              <input type="submit" value="Enviar" class="boton enviar">
+            </div>
+        </form>
       </section>
     </main>
     <footer>
-      <p>Todos los derechos reservados Front End</p>
+      <div class="suscripcion">
+        <h3>Suscríbete para más novedades</h3>
+        <form action="/sucripcion" method="GET">
+          <input type="email" name="email-suscripcion" placeholder="Ingresá tu correo electrónico">
+          <input type="submit" value="Suscribirse" class="boton">
+        </form>
+      </div>
+      <div class="info-contacto">
+         <h4>Localidad</h4>
+         <p class="info">Calle-provincia</p>
+         
+         <h4>Teléfono</h4>
+         <p class="info">Número de teléfono</p>
+         
+         <h4>Correo electrónico</h4>
+         <p class="info">Dirección de correo</p>
+
+        <div class="logo">
+          <img src="img/cat.svg" alt="Logo cat" />
+          <h1><span>Front</span> Cat&Dog</h1>
+          <img src="img/dog.svg" alt="Logo dog" />
+        </div>
+      </div>
+      <div class="derechos-reservados">
+        <p>Todos los derechos reservados Front End</p>
+      </div>
+      
     </footer>
   </body>
 </html>

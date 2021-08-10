@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 /*--------------------------------------- Genreal ------------------------------------------*/
 *{
@@ -16,6 +16,25 @@
     align-items: center;
 }
 
+h2{
+    font-weight: 700;
+}
+
+h3{
+    font-weight: 500;
+}
+
+input{
+    border: none;
+}
+
+button{
+    border: none;    
+    height: 2rem;
+    color: white;
+    border-radius: 20px;
+}
+
 /*--------------------------------------- Header ------------------------------------------*/
 header{
     color: white;
@@ -24,7 +43,7 @@ header{
 /*------------------- Top -------------------*/
 header .top{
     background-color: black;
-    height: 1.5rem;
+    padding: 0.5rem;
 }
 
 header .top .contenedor-fila-centrada
@@ -42,7 +61,8 @@ header .top .idioma-moneda{
 /*------------------- Down -------------------*/
 header .down{
     background-color: #F0A83E;
-    height: 4rem;
+    /*height: 4rem;*/
+    padding: 1rem;
 }
 header .down .contenedor-fila-centrada
 {
@@ -102,7 +122,7 @@ nav ul li a{
 /*--- Cuadro 1 ---*/
 .texto-banner .cuadro1 {
     background-color: white;
-    height: 5rem;
+    padding: 0.8rem;
     border-radius: 0.5rem;
     font-size: 3rem;
 }
@@ -114,7 +134,7 @@ nav ul li a{
 /*--- Cuadro 2 ---*/
 .texto-banner .cuadro2 {
     margin: 0 auto;
-    height: 4rem;
+    padding: 1rem;
     font-size: 1.5rem;
 }
 .texto-banner .cuadro2 p{
@@ -127,7 +147,7 @@ nav ul li a{
     background-color: #F0A83E;
     width: 50%;
     margin: 0 auto;
-    height: 4rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     font-size: 2rem;
 }
@@ -162,7 +182,6 @@ nav ul li a{
 }
 .contenedor-texto-destacados h2{
     font-size: 4rem;
-    font-weight: 700;
 }
 
 /*Menu Destacados*/
@@ -170,6 +189,8 @@ nav ul li a{
     display: flex;
     justify-content:center;
     gap: 3rem;
+
+    padding: 2rem;
 }
 .menu-destacados li{
     list-style: none;
@@ -181,8 +202,6 @@ nav ul li a{
 }
 
 
-
-
 /*--- Cards Destacados ---*/
 .contenedor-cards-destacados{
     display: flex;
@@ -190,6 +209,80 @@ nav ul li a{
     gap: 10rem;
 }
 
+.card{
+    background-color: #FBFAF6;
+    text-align: center;
+    border: 0.1rem solid #91a32c;    
+    border-radius: 10px; 
+}
+.card img{
+    border-radius: 10px 10px 0 0;
+}
+.texto-card{    
+    position: relative;
+    bottom: 5%;
+    line-height: 1.5rem;
+}
+.precio{
+    font-weight: 500;
+    color: #F0A83E;
+}
+
+/*----- Sección Contacto -----*/
+.contacto{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+}
+
+.contacto h2{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.contacto form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.contacto input{
+    background-color: #3C2313;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.boton{    
+    cursor: pointer;
+}
+.contacto button{
+    font-size: 1.5rem;
+    width: 30%;
+    height: 3rem;
+    
+}
+.contacto button.resetear{
+    background-color:#8A8787;
+}
+.boton.enviar{
+    padding: 0;
+    background-color:#F0A83E;
+    width: 30%;    
+    height: 3rem;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 20px;
+}
+
+.contacto form .botones-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 /*--------------------------------------- Footer ------------------------------------------*/
 
+.suscripcion{
+    background-color: #F0A83E;
+}
