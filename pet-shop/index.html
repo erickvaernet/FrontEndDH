@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/pet-shop-ico.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />    
-    <title>Document</title>
+    <title>Pet Shop</title>
   </head>
   <body>
     <header>
@@ -110,27 +111,42 @@
     </main>
     <footer>
       <div class="suscripcion">
-        <h3>Suscríbete para más novedades</h3>
-        <form action="/sucripcion" method="GET">
-          <input type="email" name="email-suscripcion" placeholder="Ingresá tu correo electrónico">
-          <input type="submit" value="Suscribirse" class="boton">
-        </form>
+        <div class="contenedor">
+          <div class="sucripcion-adv">
+            <i class="far fa-envelope mail-ico"></i>
+            <h3>Suscríbete para más novedades</h3>  
+          </div>
+          <form action="/sucripcion" method="GET">
+            <input type="email" name="email-suscripcion" placeholder="Ingresá tu correo electrónico" class="mail-text">
+            <input type="submit" value="Suscribirse" class="boton">
+          </form>
+        </div>        
       </div>
       <div class="info-contacto">
-         <h4>Localidad</h4>
-         <p class="info">Calle-provincia</p>
+        <div class="contenedor-info">
+          <div class="info-localidad">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Localidad</h4>
+            <p class="info">Calle-provincia</p> 
+          </div>  
+          <div class="info-telefono">
+            <i class="fas fa-phone-square-alt"></i>
+            <h4>Teléfono</h4>
+            <p class="info">Número de teléfono</p> 
+          </div>  
+          <div class="info-mail">
+            <i class="fas fa-envelope-open"></i>
+            <h4>Correo electrónico</h4>
+            <p class="info">Dirección de correo</p> 
+          </div>          
+        </div>
          
-         <h4>Teléfono</h4>
-         <p class="info">Número de teléfono</p>
-         
-         <h4>Correo electrónico</h4>
-         <p class="info">Dirección de correo</p>
-
         <div class="logo">
           <img src="img/cat.svg" alt="Logo cat" />
           <h1><span>Front</span> Cat&Dog</h1>
           <img src="img/dog.svg" alt="Logo dog" />
         </div>
+        
       </div>
       <div class="derechos-reservados">
         <p>Todos los derechos reservados Front End</p>

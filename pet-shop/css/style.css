@@ -26,7 +26,11 @@ h3{
 
 input{
     border: none;
+    padding: 1rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
 }
+
 
 button{
     border: none;    
@@ -228,10 +232,10 @@ nav ul li a{
     color: #F0A83E;
 }
 
-/*----- Sección Contacto -----*/
+/*------------------------ Sección Contacto -------------------*/
 .contacto{
     width: 30%;
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
     text-align: center;
     padding: 3rem;
 }
@@ -247,11 +251,8 @@ nav ul li a{
     justify-content: space-around;
     gap: 2rem;
 }
-
 .contacto input{
     background-color: #3C2313;
-    padding: 1rem;
-    border-radius: 20px;
 }
 .boton{    
     cursor: pointer;
@@ -283,6 +284,50 @@ nav ul li a{
 
 /*--------------------------------------- Footer ------------------------------------------*/
 
+
+/*------------- sucripcion ---------------*/
 .suscripcion{
     background-color: #F0A83E;
+}
+
+.suscripcion .contenedor{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.sucripcion-adv{
+    color: white;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.sucripcion-adv .mail-ico {
+    font-size: 3rem;
+}
+
+.suscripcion .contenedor form{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;    
+    width: 35%;
+}
+.suscripcion .contenedor form input.mail-text{
+    width: 60%;
+}
+
+.suscripcion .contenedor form input.boton{
+    font-size: 1rem;
+    background-color: #3C2313;
+    color: white;
+}
+
+/*-------------------------  Info-Contacto -------------------*/
+
+.info-contacto{
+    background-color: #3C2313;
 }
