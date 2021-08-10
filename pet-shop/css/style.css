@@ -331,3 +331,72 @@ nav ul li a{
 .info-contacto{
     background-color: #3C2313;
 }
+
+.info-contacto .contendeor-contacto{
+  margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 90%;
+}
+
+/*----------- Seccion izquierda ------------*/
+
+/*iconos info*/
+.info-ico{
+    color:white;
+    font-size: 3rem;
+}
+.fondo-ico{    
+    background-color: #8A8787;
+    border: solid #786960 0.5rem;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 7rem ;
+    
+    text-align: center;
+}
+
+/* text info*/
+.info-contenedor2{
+    display: flex;
+    margin: 1rem auto;
+    align-items: center;
+    gap: 1rem;
+}
+.info{
+    font-weight: 700;
+}
+h4{
+    color: white;
+    font-size: 2rem;
+}
+.info p{
+    color:#8A8787
+}
+
+/*----------- Seccion Derecha ------------*/
+
+/*Logo footer*/
+.logo2{
+    display: flex;    
+    flex-wrap: nowrap;  
+    justify-content: center;
+    gap: 1rem; 
+    width: 20%; 
+}
+.logo2 p{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.logo2 img{
+    height: 2rem;
+}
+
+/* Der. Reservados*/
+.derechos-reservados{
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
