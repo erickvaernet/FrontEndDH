@@ -2,6 +2,7 @@
 
 /*--------------------------------------- Genreal ------------------------------------------*/
 *{
+    max-width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +12,7 @@
 
 .contenedor-fila-centrada{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto; 
     align-items: center;
@@ -19,7 +21,6 @@
 h2{
     font-weight: 700;
 }
-
 h3{
     font-weight: 500;
 }
@@ -30,8 +31,6 @@ input{
     border-radius: 20px;
     font-size: 1.2rem;
 }
-
-
 button{
     border: none;    
     height: 2rem;
@@ -49,13 +48,11 @@ header .top{
     background-color: black;
     padding: 0.5rem;
 }
-
 header .top .contenedor-fila-centrada
 {
     height: 100%;
     width: 90%;
 }
-
 header .top .idioma-moneda{
     display: flex;
     justify-content: space-between;
@@ -77,6 +74,7 @@ header .down .contenedor-fila-centrada
 /*----- Logo -----*/
 .logo{
     display: flex;
+    align-items: center;
     width: 50% ;
 }
 .logo img{
@@ -105,7 +103,6 @@ nav ul li a{
 /*--------------------------------------- Main ------------------------------------------*/
 
 /*-------------------- Seccion 1 Banner -------------------*/
-
 /*General*/
 .banner{
     background-image: url("../img/banner-fondo.svg");
@@ -150,6 +147,7 @@ nav ul li a{
 .texto-banner .cuadro3 {
     background-color: #F0A83E;
     width: 50%;
+    min-width: 200px;
     margin: 0 auto;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -161,7 +159,6 @@ nav ul li a{
 }
 
 /*-------------------- Seccion 2 Cards ----------------*/
-
 /*--- General ---*/
 .productos-destacados{
 
@@ -178,8 +175,8 @@ nav ul li a{
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+    max-width: 100%;
 }
-
 .logo-huella{
     width: 30%;
     margin: 0 auto;
@@ -213,7 +210,6 @@ nav ul li a{
     flex-wrap: wrap;
     gap: 10rem;
 }
-
 .card{
     background-color: #FBFAF6;
     text-align: center;
@@ -224,9 +220,10 @@ nav ul li a{
     border-radius: 10px 10px 0 0;
 }
 .texto-card{    
+    font-size: 1.2rem;
     position: relative;
     bottom: 5%;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 .precio{
     font-weight: 500;
@@ -235,17 +232,16 @@ nav ul li a{
 
 /*------------------------ Sección Contacto -------------------*/
 .contacto{
-    width: 580px;
+    width: 90%;
+    max-width: 580px;
     margin: 0 auto 5rem auto;
     text-align: center;
     padding: 3rem;
 }
-
 .contacto h2{
     font-size: 2rem;
     padding: 2rem;
 }
-
 .contacto form{
     display: flex;
     flex-direction: column;
@@ -276,7 +272,6 @@ nav ul li a{
     color: white;
     border-radius: 20px;
 }
-
 .contacto form .botones-contacto{
     display: flex;
     flex-direction: row;
@@ -315,8 +310,9 @@ nav ul li a{
 .suscripcion .contenedor form{
     display: flex;
     justify-content: center;
-    gap: 3rem;    
+    gap: 5%;    
     width: 35%;
+    min-width: 350px;
 }
 .suscripcion .contenedor form input.mail-text{
     width: 60%;
@@ -402,4 +398,30 @@ h4{
     color: white;
     text-align: center;
     font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    html{
+        font-size: 14px;
+    }        
+    .menu-destacados{
+        gap:1rem;
+    }
+    .texto-banner{
+        max-width: 80%;
+        margin: auto;
+    }
+    .logo{        
+        margin: auto;
+        width: auto;
+    }
+
+    nav li{
+        text-align: center;
+    }
+    .logo img{
+        margin: 10px;
+        min-width: 40px;
+        align-items: center;
+    }
 }
