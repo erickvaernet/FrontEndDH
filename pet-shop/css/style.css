@@ -425,29 +425,3 @@ h4{
         align-items: center;
     }
 }
-
-@media all and (orientation: landscape) {
-    html{
-        font-size: 14px;
-    }        
-    .menu-destacados{
-        gap:1rem;
-    }
-    .texto-banner{
-        max-width: 80%;
-        margin: auto;
-    }
-    .logo{        
-        margin: auto;
-        width: auto;
-    }
-
-    nav li{
-        text-align: center;
-    }
-    .logo img{
-        margin: 10px;
-        min-width: 40px;
-        align-items: center;
-    }
-}
