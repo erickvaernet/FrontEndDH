@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Times New Roman';
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #005677;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+header .top {
+  text-align: center;
+  background-color: #e5e5e5;
+}
+
+header .top img {
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+header .down {
+  background-color: #c4c4c4;
+  text-align: center;
+  letter-spacing: 0.4em;
+}
+
+main {
+  margin: 2rem;
+}
+
+main .container {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  width: 70%;
+}
+
+main h2 {
+  background-color: #c4c4c4;
+  color: #005677;
+  letter-spacing: 0.2em;
+}
+
+main section .contenido {
+  margin-left: 5%;
+  margin-top: 10px;
+}
+
+main section span {
+  font-weight: bold;
+}
+
+main section span.ital {
+  font-style: italic;
+}
+
+main section ul {
+  line-height: 1.5rem;
+  margin: 1rem;
+  -webkit-margin-start: 50px;
+          margin-inline-start: 50px;
+}
+
+main section dl .elemento-lista-dic {
+  line-height: 1.2rem;
+  margin: 1rem;
+}
+
+main section dl dd {
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+}
+
+main section li {
+  line-height: 1.7rem;
+}
+
+footer {
+  background-color: #005677;
+  text-align: center;
+  margin-top: 5%;
+  font-weight: 700;
+  color: white;
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=style.css.map */
